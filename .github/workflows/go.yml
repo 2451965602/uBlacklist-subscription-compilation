@@ -5,17 +5,13 @@ on:
     - cron: "0 16 * * 1"
   push:
     branches: [ main ]
-    
   workflow_dispatch:
 
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
-    #if: github.event.repository.owner.id == github.event.sender.id
     steps:
-
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
@@ -68,15 +64,20 @@ jobs:
 
         cat tools/reverse_url >> uBlacklist.txt
 
-        # 添加时间
-        sed -i "1i\! Update weekly at $(TZ=UTC-8 date +'%Y-%m-%d %T %z')" uBlacklist.txt
+        # （可选）如果您不需要在文件开头添加时间戳注释，请保留下一行的注释状态；
+        # 如果需要添加时间戳，请取消注释。
+        # sed -i "1i\! Update weekly at $(TZ=UTC-8 date +'%Y-%m-%d %T %z')" uBlacklist.txt
 
         # 去除空行
         sed -i '/^$/d' uBlacklist.txt
 
+        # ==== 新增：移除所有包含 csdn.net 的屏蔽规则（如 *://blog.csdn.net/*、||csdn.net^ 等）====
+        sed -i '/csdn\.net/d' uBlacklist.txt
+        # ======================================================================================
+
         ln -s uBlacklist.txt uBlocklist.txt
-        
-        # 获取当前时间存入环境变量
+
+        # 获取当前时间存入环境变量（用于提交信息）
         echo "CURRENT_TIME=$(TZ=UTC-8 date +'%Y-%m-%d %T %z')" >> $GITHUB_ENV
 
     - name: Commit files
