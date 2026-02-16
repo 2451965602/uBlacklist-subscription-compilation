@@ -1,4 +1,3 @@
-! Update weekly at 2026-02-10 21:01:13 +0800
 *://*.001553.cn/*
 *://*.003zuqiu.com/*
 *://*.005i.com/*
@@ -3207,8 +3206,6 @@
 *://*.csdake.com/*
 *://*.csdetec.com/*
 *://*.csdn.com/*
-*://*.csdn.net/*
-*://*.csdn.net/weixin_26722031/article/*
 *://*.csdnimg.cn/*
 *://*.csfeiyuan.com/*
 *://*.cshuamu8.com/*
@@ -12972,8 +12969,6 @@
 *://artez.org.cn/*
 *://ashcroft.com.br/*  
 *://ask-dev.ru/*
-*://ask.csdn.net/*
-*://ask.csdn.net/questions/*
 *://ask.helplib.com/*
 *://ask.seowhy.com/*
 *://ask.zol.com.cn/*
@@ -13004,7 +12999,6 @@
 *://baocaiyijia.com/
 *://baoku.360.cn/*
 *://base64.work/so/*
-*://bbs.csdn.net/*
 *://bbs.guaruan.com/*
 *://bbs.mydigit.cn/*
 *://bbs.nga.cn/*
@@ -13037,10 +13031,6 @@
 *://blockchainexperts.online/*
 *://blog.17baishi.com/*  
 *://blog.7yplay.com/*  
-*://blog.csdn.net/*
-*://blog.csdn.net/holybin/*
-*://blog.csdn.net/netgc/*
-*://blog.csdn.net/weixin_35909238/*
 *://blog.ficowshen.com/*
 *://blog.silucg.com/*
 *://blog.wu-boy.com/*
@@ -13234,7 +13224,6 @@
 *://down.znds.com/*
 *://download.chinakaoyan.com/*
 *://download.cnet.com/*
-*://download.csdn.net/*
 *://downloadsicim.web.app/*
 *://dpcc.cc/*
 *://dq.tieba.com/*
@@ -13706,7 +13695,6 @@
 *://maguai.com/*
 *://mai14.com/*  
 *://make.mk/*
-*://maokun.blog.csdn.net/*
 *://matbakhe.com/*  
 *://matpool.com/*  
 *://maweisong.net/ 
@@ -14649,8 +14637,6 @@
 *://www.creditnavi.buzz/*
 *://www.crifan.com/*
 *://www.csdetec.com/*
-*://www.csdn.net/gather_*
-*://www.csdn.net/tags/*
 *://www.csfeiyuan.com/*
 *://www.csjidi.com/*
 *://www.csjidi.com/*  
@@ -24239,7 +24225,6 @@ cqsscai3188.com
 cqxhfgz.com
 crex24.com
 cscec7bjt.com
-csdn.net
 ctcea.org
 ctocio.com.cn
 ctyyn.com
