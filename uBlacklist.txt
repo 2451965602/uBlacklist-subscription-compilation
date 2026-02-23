@@ -6597,6 +6597,7 @@
 *://*.kuaizix.com/*
 *://*.kuandaile.com/*
 *://*.kuangxiangkeji.cn/*
+*://*.kuazhi.com/*
 *://*.kubh.lkcpz.download/*
 *://*.kubwljw.cn/*
 *://*.kuenstlerring.buzz/*
@@ -25271,6 +25272,7 @@ kuaiso.hk
 kuaisounews.com
 kuaisusou.cc
 kuaiyong.com
+kuazhi.com
 kubh.lkcpz.download
 kusearch.cc
 kushalinfra.com
