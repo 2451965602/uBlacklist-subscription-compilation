@@ -6022,7 +6022,6 @@
 *://*.jieshikj.com/*
 *://*.jietouxzz.com/*
 *://*.jiewanju.com/*
-*://*.jifengba.com/*
 *://*.jifutang68.com/*
 *://*.jihehuaban.com.cn/*
 *://*.jijisf.com/*
@@ -6425,7 +6424,6 @@
 *://*.kingtaisei.com/*
 *://*.kinlawswelcomegrill.com/*
 *://*.kiri.art/*
-*://*.kissbaidu.com/*
 *://*.kissiya.com/*
 *://*.kisyou.cn/*
 *://*.kitchenlady.cn/*
@@ -14865,7 +14863,6 @@
 *://www.key-fame.com/*  
 *://www.kfwrlc.com/*
 *://www.kimintae.com/*  
-*://www.kissbaidu.com/*
 *://www.kjcxyyyzzs.cn/*
 *://www.knisterq.buzz/*
 *://www.koehlbrandbrueckenlauf.de/*  
