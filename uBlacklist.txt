@@ -6226,7 +6226,6 @@
 *://*.ju8sq.com/*
 *://*.judongneng.com/*
 *://*.judsonu.edu/*
-*://*.juejin.cn/s/*
 *://*.juejinka.com/*
 *://*.jugomobile.com/*
 *://*.juhebbs.com/*
@@ -12878,7 +12877,6 @@
 *://baicaisd.com/*
 *://baiduchangsheng.com/*  
 *://baijiahao.baidu.com/*
-*://baike.baidu.com/tashuo/*
 *://baipat.com/*
 *://bannercuts.com /*  
 *://baocaiyijia.com/
@@ -13370,7 +13368,6 @@
 *://jssou.cc/*
 *://jstt.cc/*
 *://jtuto.com/*
-*://juejin.cn/*
 *://jump2.bdimg.com/*
 *://jurisprudentes.es/*  
 *://jutuilian.com/*
