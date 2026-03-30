@@ -71427,7 +71427,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://*.sdxinli.org/*
 *://*.sefyc.com/*
 *://*.shejiben.com/*
-*://*.shenlongbbs.com/*
 *://*.shihuishuo.com/*
 *://*.shijiyin.com/*
 *://*.shluqu.cn/*
@@ -71695,7 +71694,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://hantenglaw.com/*
 *://herexjabar.over-blog.com/*
 *://hk.uwenku.com/*
-*://hnsqnlhh.com/*
 *://homiemall.com/*
 *://hz-heng-li.com/*
 *://hzhcontrols.com/*

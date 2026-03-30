@@ -9528,7 +9528,6 @@
 *://*.shengyis.com/*
 *://*.shenkehan.com/*
 *://*.shenlisy.com/*
-*://*.shenlongbbs.com/*
 *://*.shenmedaquan.com/*
 *://*.shenmeilan.com/*
 *://*.shenshanhongye.com/*
@@ -13263,7 +13262,6 @@
 *://hljmj.org/*  
 *://hnjrtb.com/*
 *://hnpjjc.com/*
-*://hnsqnlhh.com/*
 *://hnup.cc/*
 *://homeysupply.com/*  
 *://homiemall.com/*
