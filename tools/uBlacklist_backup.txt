@@ -67453,7 +67453,7 @@ title/(视频去哪了呢)/
 *://fazhaber.online/*
 *://firtinaosman.online/*
 *://fonthaha.com/*
-*://ttfont.com/*
+*://*.ttfont.com/*
 *://taofont.com/*
 *://*.ztxz.cc/*
 *://*.fontku.com/*
@@ -67511,7 +67511,9 @@ title/(视频去哪了呢)/
 *://*.wqsnyx2.com/*
 *://*.ikuko.homes/*
 *://*.anzhuo8.com/*
+*://*.game773.com/*
 *://*.520zuowens.com/*
+*://*.sheitao.com/*
 *://*.52pk.com/*
 *://*.59xt.com/*
 *://*.600xue.com/*

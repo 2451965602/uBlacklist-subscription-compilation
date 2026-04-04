@@ -2145,7 +2145,6 @@
 *://*.baidu.com.se/*
 *://*.baidu.com.swd1rsv_spt1rsv_iqid.1234on.com/*
 *://*.baidu.com.txzer.com/*
-*://*.baidu.com/*
 *://*.baidu.com/s?word=*
 *://*.baidu.fileso.com/*
 *://*.baidu.mx/*
@@ -4515,6 +4514,7 @@
 *://*.galleri50.com/*
 *://*.gallery-ai.art/*
 *://*.game-encyclopedia.com/*
+*://*.game773.com/*
 *://*.game777.cn/*
 *://*.gameants.com/*
 *://*.gameboys.net/*
@@ -9514,6 +9514,7 @@
 *://*.shecodes.io/athena/*
 *://*.shedevrum.ai/*
 *://*.shegiveshead.buzz/*
+*://*.sheitao.com/*
 *://*.sheji1688.net/*
 *://*.shejiben.com/*
 *://*.shellfishsoft.com/*
@@ -10570,6 +10571,7 @@
 *://*.tt1d5qj.cn/*
 *://*.ttaaj.com/*
 *://*.ttd8.cn/*
+*://*.ttfont.com/*
 *://*.ttgc.cc/*
 *://*.tthzhk1.cn/*
 *://*.ttiits.cn/*
@@ -13902,7 +13904,6 @@
 *://try2explore.com/*
 *://tsfx.cc/*
 *://ttaaj.com/*
-*://ttfont.com/*
 *://ttgc.cc/*
 *://tushuo.jk51.com/*
 *://tutorialmore.com/*
