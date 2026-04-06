@@ -71422,7 +71422,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://*.rollingfhr.xyz/*
 *://*.rtxmail.net/*
 *://*.rukomos.ru/*
-*://*.sa123.cc/*
 *://*.safetydetectives.com/*
 *://*.saintlad.com/*
 *://*.saoyu.com/*
@@ -71936,7 +71935,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://www.captainbed.net/*
 *://www.carousell.com.hk/*
 *://www.cbedai.net/*
-*://www.ccddzlq.com/*
 *://www.cctsuzhou.cn/*
 *://www.chaoju.com/*
 *://www.chepinnet.com/*
@@ -72007,7 +72005,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://www.hanlefang.net/*
 *://www.haoecn.com/*
 *://www.harngtong.url.tw/*
-*://www.hcgtx.com/*
 *://www.heibai.org/*
 *://www.hello.so/*
 *://www.helplib.cn/*
@@ -72045,7 +72042,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://www.kutu66.com/*
 *://www.lagou.com/lgeduarticle/*
 *://www.lansingip.com/*
-*://www.lanzhouyangsheng.com/*
 *://www.lanzhouzaixian.cn/*
 *://www.lightspeedtrucking.com/*
 *://www.linuxboy.net/*
@@ -72142,7 +72138,6 @@ title/.* - 小.(百科 | 知识) 网/
 *://www.sldfc.cn/*
 *://www.smpchome.com/*
 *://www.sociablelabs.com/*
-*://www.sodeog.com/*
 *://www.sohu.com/a/*
 *://www.sojson.com/blog/*
 *://www.suning.com/*
