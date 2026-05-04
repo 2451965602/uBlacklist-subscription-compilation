@@ -7722,7 +7722,6 @@
 *://*.nmhjw.cn/*
 *://*.nmhsp.com/*
 *://*.nms88.cn/*
-*://*.nmxjp.com/*
 *://*.nmzxbr3.com/*
 *://*.nnpq8dx.cn/*
 *://*.nnsbbs.com/*
@@ -13991,7 +13990,6 @@
 *://wkto.cc/*
 *://wncwebsolutions.com/*
 *://wntzx.cn/*
-*://workit.cc/*
 *://world.taobao.com/*
 *://wospxi.com/*  
 *://wpsousuo.cn/*
@@ -14459,7 +14457,6 @@
 *://www.darentang.org/*
 *://www.datainr.com/*
 *://www.daxuemi.com/*
-*://www.dayueng.cn/*
 *://www.dcep676.com/*
 *://www.dcep676.com/*  
 *://www.dcwqt.com/*
@@ -14861,7 +14858,6 @@
 *://www.lanh1.com/*
 *://www.lansingip.com/*
 *://www.lanzhouyangsheng.com/*
-*://www.lanzhouzaixian.cn/*
 *://www.laocuold.com/*  
 *://www.laodnf.com/*
 *://www.laser-imprints.buzz/*
