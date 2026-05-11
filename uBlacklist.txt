@@ -2112,7 +2112,6 @@
 *://*.azhahf.com/*
 *://*.azp26eh.cn/*
 *://*.azurewebsites.net/*
-*://*.b00h.com/*
 *://*.b0dngi0.cn/*
 *://*.b0plkxe.cn/*
 *://*.b14kz8n.cn/*
