@@ -77,6 +77,7 @@ jobs:
         # 精确匹配并删除
         sed -i '/^\*:\/\/\*\.baidu\.com\/\*$/d' uBlacklist.txt
         sed -i '/bbs\.3dmgame\.com/d' uBlacklist.txt
+        sed -i '/^\*:\/\/\*\.3dmgame\.com\/\*$/d' uBlacklist.txt
         sed -i '/juejin\.cn/d' uBlacklist.txt
         # ======================================================
 
