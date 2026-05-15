@@ -659,7 +659,6 @@
 *://*.3daima.com/*
 *://*.3dhmao.org/*
 *://*.3dmdvx.cn/*
-*://*.3dmgame.com/*
 *://*.3eaodi.com/*
 *://*.3enfv3an.com/*
 *://*.3feetshort.buzz/*
