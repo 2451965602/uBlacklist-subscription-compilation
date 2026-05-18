@@ -4419,7 +4419,6 @@
 *://*.ftu7hqn.cn/*
 *://*.fuatergin.buzz/*
 *://*.fubd4ur.cn/*
-*://*.fukuyama-okoku.com/*
 *://*.fuligou8.com/*
 *://*.fullbloomclub.net/*
 *://*.fullstack.cafe/*
