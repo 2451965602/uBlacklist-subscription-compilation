@@ -17348,7 +17348,6 @@ pytest>=7.0.0
 *://smartme.pl/*
 *://sodocumentation.net/*
 *://stackoom.com/*
-*://stackovernet.xyz/*
 *://stackoverrun.com/*
 *://stackscn.com/*
 *://sunnews.cc/*
