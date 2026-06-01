@@ -2642,7 +2642,6 @@
 *://*.calyxcare.buzz/*
 *://*.cameralyze.co/*
 *://*.cameron-a-reviews.com/*
-*://*.camlya.com/*
 *://*.campuslifeline.buzz/*
 *://*.cancer0086.com/*
 *://*.candhdistributors.buzz/*
@@ -2789,7 +2788,6 @@
 *://*.chatsimple.ai/*
 *://*.chattaboo.com/*
 *://*.chazuonet.com/*
-*://*.chcpd.com/*
 *://*.cheap-smoke.buzz/*
 *://*.cheapaprtments.buzz/*
 *://*.cheapnft.art/*
@@ -6223,7 +6221,6 @@
 *://*.judsonu.edu/*
 *://*.juejinka.com/*
 *://*.jugomobile.com/*
-*://*.juhebbs.com/*
 *://*.jukangsw.com/*
 *://*.julindrarecycling.com/*
 *://*.julius.ai/*
