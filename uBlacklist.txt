@@ -12231,7 +12231,6 @@
 *://*.yuffz.com/*
 *://*.yuhaokeji.com/*
 *://*.yuhuan777.cn/*
-*://*.yujiedh.xyz/*
 *://*.yuleall.com/*
 *://*.yulindown.com/*
 *://*.yulinkehong.cn/*
@@ -13278,6 +13277,7 @@
 *://ihkcar.com/*
 *://iknow.baidu.com/search?word=*
 *://ilvruan.com/*
+*://ima.qq.com/create/*
 *://immobiliarestella.com/*  
 *://in.gsyyq.com/*
 *://in.zyggs.com/*
