@@ -8505,7 +8505,6 @@
 *://*.pyk696.com/*
 *://*.pyk868.com/*
 *://*.pyn889.com/*
-*://*.pyn9.com/*
 *://*.pyquestions.com/*
 *://*.python-stack.de/*
 *://*.python.engineering/*
@@ -13255,7 +13254,6 @@
 *://hwl.pornl.co/*
 *://hxcm576.com/*  
 *://hyznkj.com/*
-*://hz-heng-li.com/*
 *://hzhanshu.com/*
 *://hzhcontrols.com/*
 *://hzhjjx.com/*
