@@ -10456,7 +10456,6 @@
 *://*.tomatoesweb.com/*
 *://*.tomcat.org.cn/*
 *://*.toms2013.com/*
-*://*.tomzx.com/*
 *://*.tongbu.com/*
 *://*.tongfengqu.com/*
 *://*.tonghejiu.com/*
@@ -14213,7 +14212,6 @@
 *://www.ajpsp.com/*
 *://www.aliyun.com/*
 *://www.aliyun.com/sswd/*
-*://www.aliyunyh.com/*
 *://www.alliance-a.net/*  
 *://www.amazon.com/*
 *://www.amcpp.com/*
