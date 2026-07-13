@@ -2784,7 +2784,6 @@
 *://*.chatel-taxi.buzz/*
 *://*.chatgpt.com/*
 *://*.chatsimple.ai/*
-*://*.chattaboo.com/*
 *://*.chazuonet.com/*
 *://*.cheap-smoke.buzz/*
 *://*.cheapaprtments.buzz/*
@@ -13973,7 +13972,6 @@
 *://wkmm.cc/*
 *://wkto.cc/*
 *://wncwebsolutions.com/*
-*://wntzx.cn/*
 *://world.taobao.com/*
 *://wospxi.com/*  
 *://wpsousuo.cn/*
@@ -15260,7 +15258,6 @@
 *://www.tlyhc.0475dm.com/
 *://www.tmall.com/*
 *://www.tmcul.com/*  
-*://www.tonganw.com/*
 *://www.tongfengqu.com/*
 *://www.toppxbb.com/*  
 *://www.torrent-outpost.com/*  
