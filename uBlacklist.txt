@@ -1477,7 +1477,6 @@
 *://*.aaamhh.com/*
 *://*.aaggob.cn/*
 *://*.aaiv.net/*
-*://*.aalahty.cn/*
 *://*.aalaicc.com/*
 *://*.aasou.cc/*
 *://*.abadisurvey.com/*
@@ -3229,7 +3228,6 @@
 *://*.cxygjd.com/*
 *://*.cxymm.net/*
 *://*.cxyread.cc/*
-*://*.cxywk.com/*
 *://*.cxyy0429.cn/*
 *://*.cxyzd.xyz/*
 *://*.cxyzjd.com/*
@@ -6532,7 +6530,6 @@
 *://*.kukasc.com/*
 *://*.kundelu.cn/*
 *://*.kunpengjy.cn/*
-*://*.kunyuyuan.com/*
 *://*.kupaosuda.com/*
 *://*.kupid.ai/*
 *://*.kuqistudio.com/*
