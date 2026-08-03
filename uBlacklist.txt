@@ -12545,7 +12545,6 @@
 *://*.zjy56.com/*
 *://*.zjyeya.com/*
 *://*.zjyylk.com/*
-*://*.zjzmxny.com/*
 *://*.zjzyfm.com/*
 *://*.zkaf4d.cn/*
 *://*.zkjdz.cn/*
@@ -14206,7 +14205,6 @@
 *://www.alliance-a.net/*  
 *://www.amazon.com/*
 *://www.amcpp.com/*
-*://www.amhnn.com/*
 *://www.amoyman.com/*
 *://www.ancii.com/*
 *://www.andarlyn.com/*  
@@ -14282,7 +14280,6 @@
 *://www.blybx.com/*  
 *://www.bmdgi.com/*
 *://www.bnee.net/*
-*://www.bobofun.com/*
 *://www.boilgame.com/*  
 *://www.bokcms.com/*
 *://www.bombsession.com/*  
@@ -14649,7 +14646,6 @@
 *://www.hhfumeijia.com/*  
 *://www.hibbba.com/*
 *://www.hisour.com/*
-*://www.histrend.hk/*
 *://www.hjt1.org/*  
 *://www.hlgeyy.com/*  
 *://www.hltv.org/*  
@@ -15157,7 +15153,6 @@
 *://www.slmnqq.com/*  
 *://www.slyujia.com/*  
 *://www.smokinjoescigarettes.com/*  
-*://www.smpchome.com/*
 *://www.snepfsu-nancy-metz.net/*  
 *://www.sobyte.net/*  
 *://www.sociablelabs.com/*
@@ -15571,7 +15566,6 @@
 *://www.zyncschool.com/*
 *://www.zzbhg.com/*
 *://www.zzchangsheng.com/*  
-*://www.zzchenhui.com/*
 *://www.zzdeyin.com/*
 *://www.zzsqkb.com/*
 *://www.zzthmu.com/*
