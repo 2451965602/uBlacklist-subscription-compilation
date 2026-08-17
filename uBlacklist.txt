@@ -11564,7 +11564,6 @@
 *://*.xa8.net/*
 *://*.xabbt.com/*
 *://*.xablgt.cn/*
-*://*.xagrtx.com/*
 *://*.xagtfqw.com/*
 *://*.xahaihongbz.com/*
 *://*.xahuapu.net/*
@@ -15380,7 +15379,6 @@
 *://www.xfzx365.com/*  
 *://www.xgsyc.com/*  
 *://www.xhforyou.com/*  
-*://www.xhsdzjys.com/*
 *://www.xhwjsz.com/*  
 *://www.xia3.com/*
 *://www.xiandai2012.com/*
