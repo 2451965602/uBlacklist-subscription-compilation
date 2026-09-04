@@ -79,6 +79,7 @@ jobs:
         sed -i '/bbs\.3dmgame\.com/d' uBlacklist.txt
         sed -i '/^\*:\/\/\*\.3dmgame\.com\/\*$/d' uBlacklist.txt
         sed -i '/juejin\.cn/d' uBlacklist.txt
+        sed -i '/q\.qq\.com/d' uBlacklist.txt
         # ======================================================
 
         # 去除空行
