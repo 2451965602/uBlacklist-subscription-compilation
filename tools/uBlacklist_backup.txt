@@ -56498,7 +56498,6 @@ title/(视频去哪了呢)/
 *://*.tenorshare.com/*
 *://*.theastrologypage.com/*
 *://*.thrivemyway.com/*
-*://*.tidewaterschool.org/*
 *://*.tintsoft.com/*
 *://*.tipsandtricks.tech/*
 *://*.todohealth.com/*

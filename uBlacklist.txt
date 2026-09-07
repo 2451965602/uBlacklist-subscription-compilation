@@ -10364,7 +10364,6 @@
 *://*.tianyusky.cn/*
 *://*.tiaokan.info/*
 *://*.tibet-internal.buzz/*
-*://*.tidewaterschool.org/*
 *://*.tierre-laser.buzz/*
 *://*.tigotool.com/*
 *://*.tigresounds.com/*
