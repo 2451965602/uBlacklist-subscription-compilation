@@ -1945,7 +1945,6 @@
 *://*.apuestas21.buzz/*
 *://*.apyequan.com/*
 *://*.aqbbb.com/*
-*://*.aqmdjx.com/*
 *://*.aqtt.cc/*
 *://*.aquacool-gaffney.buzz/*
 *://*.aquariumfishsource.com/*
@@ -14862,7 +14861,6 @@
 *://www.luocige.com/*
 *://www.lutonjixie.com/*  
 *://www.lvbschool.com/*  
-*://www.lvyou5.net/*
 *://www.lwesedu.com/*  
 *://www.lxiaoyu.com/*
 *://www.lxws.net/*
