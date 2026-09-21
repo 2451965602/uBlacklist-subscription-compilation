@@ -12386,7 +12386,6 @@
 *://*.zgjkshh.com/*
 *://*.zgkssjw.com/*
 *://*.zgky7.com/*
-*://*.zglangying.com/*
 *://*.zgnzwzzgys.com/*
 *://*.zgouman.com/*
 *://*.zgregwu.cn/*
@@ -13947,7 +13946,6 @@
 *://whdpp.com/*
 *://whdpp.com/*  
 *://whjnrj.com/*
-*://who-called-de.com/*
 *://whpc.cc/*
 *://wiki-tech.net/*
 *://windowsbulletin.com/*
