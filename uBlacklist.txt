@@ -3297,7 +3297,6 @@
 *://*.dafengdagengren.com/*
 *://*.dafn.cc/*
 *://*.daftart.ai/*
-*://*.dafuhua.com/*
 *://*.dafx.cc/*
 *://*.daidaigou.org/*
 *://*.daigoupiggy.com/*
@@ -7112,7 +7111,6 @@
 *://*.maximuum.com/*
 *://*.maxinterview.com/*
 *://*.mayijiankong.com/*
-*://*.mb-intendance.com/*
 *://*.mbezdv.cn/*
 *://*.mbme-tr.buzz/*
 *://*.mcaren.com/*
@@ -11223,7 +11221,6 @@
 *://*.whjnrj.com/*
 *://*.whldl.com/*
 *://*.whm00f6.cn/*
-*://*.whoisua.com/*
 *://*.whoisvip.cn/*
 *://*.whpc.cc/*
 *://*.whrsjdwx.com/*
@@ -15001,7 +14998,6 @@
 *://www.paloma.cn/*
 *://www.pantianxia.com/*
 *://www.paradoxors.com/*  
-*://www.parichyimin.com/*
 *://www.patobriens.com/*  
 *://www.pck777.com/*
 *://www.pconline.com.cn/3g/*
