@@ -935,7 +935,6 @@
 *://*.54496.cn/*
 *://*.5467.com/*
 *://*.54gsl.com/*
-*://*.54site.com/*
 *://*.54zc.com/*
 *://*.55118885.com/*
 *://*.55276.net/*
@@ -5572,7 +5571,6 @@
 *://*.icons8.com/*
 *://*.icoosky.com/*
 *://*.icopy.site/*
-*://*.icp-bbs.com/*
 *://*.icplf.cn/*
 *://*.id0m3f.cn/*
 *://*.id528.com/*
@@ -12896,7 +12894,6 @@
 *://bsc.by/*  
 *://bsxing.com/*  
 *://btgrcc.com/*
-*://bug200.com/*
 *://bulianglin.com/*
 *://bulvar.pw/*
 *://bupn.cc/*
@@ -13300,7 +13297,6 @@
 *://jiaoqiubifenchaxun.wfleishi.com/
 *://jiashigz.com/*  
 *://jiehunliwu.9tu9.com/*
-*://jinan110.com/*
 *://jindejt.com/*  
 *://jishuzhan.net/*
 *://jisuc.com/*
@@ -14049,7 +14045,6 @@
 *://www.3997015.com/*
 *://www.39qq.com/*
 *://www.3dmax8.com/*
-*://www.3gsu.com/*
 *://www.3jrx.com/*
 *://www.3li.cc/*
 *://www.3rxing.org/*
@@ -14342,7 +14337,6 @@
 *://www.cnblogs.com/sysin/*
 *://www.cne44.com/*
 *://www.cnpython.com/qa/*
-*://www.cnshhbs.com/*
 *://www.cnwaizi.com/*  
 *://www.cnwoodnet.buzz/*
 *://www.cocoachina.com/*
@@ -14415,7 +14409,6 @@
 *://www.dcep676.com/*  
 *://www.dcwqt.com/*
 *://www.ddhyl.cn/*
-*://www.ddpei.com/*
 *://www.ddvweb.com/*
 *://www.dealmoon.com/*
 *://www.debug8.com/*
@@ -14737,7 +14730,6 @@
 *://www.jianlirc.com/*  
 *://www.jiasuniao.com/*
 *://www.jiemengla.com/*
-*://www.jinan110.com/*
 *://www.jinanlaishi.com/*  
 *://www.jinbangdazongjys.com/*  
 *://www.jingpai88.com/*  
