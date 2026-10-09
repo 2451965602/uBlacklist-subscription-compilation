@@ -23,67 +23,14 @@ jobs:
         fetch-depth: 1
         submodules: true
 
-    - name: Merge txt
+    - name: Compile subscription
       run: |
-        git submodule update --remote --recursive --force
-        # 预处理一些数据
-        cp source/gyli/Blocklist/BLOCKLIST_uBlacklist source/gyli/Blocklist/blocklist.txt
-        rm uBlacklist.txt
-        rm uBlocklist.txt
-        rm tools/uBlacklist_backup.txt
-        rm source/gyli/Blocklist/blocklist.txt
-        rm source/Paxxs/Google-Blocklist/data -rf
-        rm source/laylavish/uBlockOrigin-HUGE-AI-Blocklist/additional_list_nuclear.txt
-        rm source/laylavish/uBlockOrigin-HUGE-AI-Blocklist/list.txt
-        rm source/laylavish/uBlockOrigin-HUGE-AI-Blocklist/list_uBlacklist_nuclear.txt
-        rm source/laylavish/uBlockOrigin-HUGE-AI-Blocklist/noai_hosts.txt
-        mv reverse_url.txt tools/reverse_url
-
-        # Issue # 48
-        sed -i '/^http:\/\//d' source/zweie/some-rules-for-ublacklist/Annoyingbastard.txt
-
-        # Issue # 63
-        perl -i -pe 's#\Q/.*\/(?:m|wap)\..*/##g' source/zweie/some-rules-for-ublacklist/Annoyingbastard.txt
-        sed -i '$a\/.*\/(?:(?!m\.douban\.com)(?:m|wap)\..*/' source/zweie/some-rules-for-ublacklist/Annoyingbastard.txt
-
-        # 合并所有列表
-        find . -type f -name "*.txt" -exec sh -c 'cat "$0"; echo' {} \; > tools/uBlacklist
-
+        git submodule update --init --remote --force source/eallion/uBlacklist-Subscription source/obgnail/chinese-internet-is-dead
+        cat source/eallion/uBlacklist-Subscription/ublacklist.txt source/obgnail/chinese-internet-is-dead/blocklist.txt > tools/uBlacklist.txt
         cd tools
-        mv uBlacklist uBlacklist.txt
-        go run main.go
-        cat -s uBlacklist.txt | sed '/^[[:space:]]*$/d'
-        mv uBlacklist.txt ../uBlacklist.txt -f
+        go run . -input uBlacklist.txt -output uBlacklist.txt -backup uBlacklist_backup.txt -exclusions ../exclusions.txt
+        mv uBlacklist.txt ../uBlacklist.txt
         cd ..
-
-        # 删除以 # 开头的行
-        sed -i '/^#/d' uBlacklist.txt
-
-        # 删除以 ! 开头的行
-        sed -i '/^!/d' uBlacklist.txt
-
-        cat tools/reverse_url >> uBlacklist.txt
-
-        # （可选）如果您不需要在文件开头添加时间戳注释，请保留下一行的注释状态；
-        # 如果需要添加时间戳，请取消注释。
-        # sed -i "1i\! Update weekly at $(TZ=UTC-8 date +'%Y-%m-%d %T %z')" uBlacklist.txt
-
-        
-
-        # ==== 新增：移除特定屏蔽规则 (CSDN, 贴吧, 百科, 3DM) ====
-        sed -i '/csdn\.net/d' uBlacklist.txt
-        sed -i '/tieba\.baidu\.com/d' uBlacklist.txt
-        sed -i '/baike\.baidu\.com/d' uBlacklist.txt
-        # 精确匹配并删除
-        sed -i '/^\*:\/\/\*\.baidu\.com\/\*$/d' uBlacklist.txt
-        sed -i '/bbs\.3dmgame\.com/d' uBlacklist.txt
-        sed -i '/^\*:\/\/\*\.3dmgame\.com\/\*$/d' uBlacklist.txt
-        sed -i '/juejin\.cn/d' uBlacklist.txt
-        sed -i '/q\.qq\.com/d' uBlacklist.txt
-        # ======================================================
-
-        # 去除空行
-        sed -i '/^$/d' uBlacklist.txt
 
         # 获取当前时间存入环境变量（用于提交信息）
         echo "CURRENT_TIME=$(TZ=UTC-8 date +'%Y-%m-%d %T %z')" >> $GITHUB_ENV

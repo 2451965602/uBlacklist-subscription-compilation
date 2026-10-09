@@ -1,0 +1,10 @@
+# Versioned compiler exclusions. Domain selectors match the exact host or a
+# dot-delimited subdomain, never an arbitrary substring.
+domain:csdn.net
+domain:tieba.baidu.com
+domain:baike.baidu.com
+*://*.baidu.com/*
+domain:bbs.3dmgame.com
+*://*.3dmgame.com/*
+domain:juejin.cn
+domain:q.qq.com

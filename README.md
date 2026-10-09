@@ -7,8 +7,11 @@
 
 > 订阅源地址：`https://git.io/ublacklist`  
 
-这是一个 uBlacklist 插件的订阅地址合集，搜集了网上大部分的订阅地址合并成一个。  
+这是一个 uBlacklist 插件订阅合集，目前汇总 eallion 和 obgnail 两个订阅源。
 通过 [Github Actions](https://github.com/eallion/uBlacklist-subscription-compilation/actions/workflows/go.yml) 每周自动更新一次。
+
+订阅规则遵循 [uBlacklist 官方订阅与规则说明](https://github.com/iorate/ublacklist/blob/master/README.zh-CN.md)。
+需要排除的域名和规则统一记录在版本控制中的 [`exclusions.txt`](exclusions.txt)：`domain:` 规则只匹配该域名及其点分隔子域名，其他规则按规范化后的完整规则精确匹配。
 
 ### 功能
 
@@ -107,10 +110,6 @@ https://raw.githubusercontent.com/eallion/uBlacklist-subscription-compilation/ma
 *://*/so/*
 ```
 
-屏蔽 AI 内容农场：
-
-> 来自：https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist?tab=readme-ov-file#ublacklist
-
 ### 添加/删除 域名
 
 ##### 1. 插件设置
@@ -143,20 +142,8 @@ https://raw.githubusercontent.com/eallion/uBlacklist-subscription-compilation/ma
 
 > 添加订阅源的时候，各订阅源均采用 Mit License 或无 License。如果有侵权行为，我会第一时间删除。
 
-- https://github.com/arosh/ublacklist-stackoverflow-translation.git
-- https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist.git
-- https://github.com/dallaslu/penzai-list.git
-- https://github.com/gyli/Blocklist.git
-- https://github.com/h-matsuo/uBlacklist-subscription-for-developer.git
-- https://github.com/littleserendipity/uBlacklist-Subscription.git
-- https://github.com/liubiantao/uBlacklist-Websites.git
-- https://github.com/nonPointer/uBlacklist-Subscription.git
-- https://github.com/Paxxs/Google-Blocklist
-- https://github.com/xNathan/uBlacklist-subscription.git
-- https://github.com/YeSilin/uBlacklist.git
-- https://github.com/youzeliang/uBlacklist-Subscription
-- https://github.com/zweie/some-rules-for-ublacklist
-- https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist
+- [eallion/uBlacklist-Subscription](https://github.com/eallion/uBlacklist-Subscription)
+- [obgnail/chinese-internet-is-dead](https://github.com/obgnail/chinese-internet-is-dead)
 
 ### 推荐
 

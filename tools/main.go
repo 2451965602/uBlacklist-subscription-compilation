@@ -1,165 +1,162 @@
 package main
 
 import (
+	"bufio"
+	"flag"
 	"fmt"
-	"io"
+	"io/ioutil"
 	"os"
 	"sort"
 	"strings"
 )
 
-// 通过两重循环过滤重复元素
-func RemoveRepeatedElement(arr []string) []string {
-	// 存放结果，空初始化比make定义要快
-	result := []string{}
-	// 外层循环准备添加到结果的切片
-	for i := 0; i < len(arr); i++ {
-		// 初始定义该元素不存在，很奇怪，初始在循环里面比先声明在外面之后再赋值要快
-		exist := false
-		// 这里根据当前切片的长度进行循环，直接使用 len 比初始一个 count变量 记数要快
-		for j := 0; j < len(result); j++ {
-			// 如果遇到重复提前退出
-			if result[j] == arr[i] {
-				// 并且说明已存在
-				exist = true
-				break
-			}
-		}
-		// 如果在 result切片都没有遍历到此元素
-		if !exist {
-			// 那么就追加到 result
-			result = append(result, arr[i])
-		}
+// normalizeRule canonicalizes URL and uBlacklist match-pattern scheme/host
+// casing, and removes a redundant trailing slash. Other expressions are kept
+// intact after surrounding whitespace is trimmed.
+func normalizeRule(rule string) string {
+	rule = strings.TrimSpace(strings.ReplaceAll(rule, "\r", ""))
+	if rule == "" {
+		return ""
 	}
+
+	separator := strings.Index(rule, "://")
+	if separator < 0 {
+		domain := strings.TrimSuffix(rule, "/")
+		if strings.Contains(domain, ".") && !strings.ContainsAny(domain, "/?#: \t") {
+			return strings.ToLower(domain)
+		}
+		return rule
+	}
+	scheme := strings.ToLower(rule[:separator])
+	remainder := rule[separator+3:]
+	endHost := strings.IndexAny(remainder, "/?#")
+	host := remainder
+	suffix := ""
+	if endHost >= 0 {
+		host, suffix = remainder[:endHost], remainder[endHost:]
+	}
+	host = strings.ToLower(host)
+	if suffix == "/" {
+		suffix = ""
+	}
+	return scheme + "://" + host + suffix
+}
+
+func isComment(line string) bool {
+	return strings.HasPrefix(line, "#") || strings.HasPrefix(line, "!")
+}
+
+// normalizeAndDedupe retains the first spelling of each canonical rule,
+// excludes comments and blank lines, then sorts the retained representatives.
+func normalizeAndDedupe(input string) []string {
+	seen := make(map[string]struct{})
+	result := make([]string, 0)
+	for _, line := range strings.Split(strings.ReplaceAll(input, "\r\n", "\n"), "\n") {
+		line = strings.TrimSpace(strings.ReplaceAll(line, "\r", ""))
+		if line == "" || isComment(line) {
+			continue
+		}
+		canonical := normalizeRule(line)
+		if _, found := seen[canonical]; found {
+			continue
+		}
+		seen[canonical] = struct{}{}
+		result = append(result, line)
+	}
+	sort.Strings(result)
 	return result
 }
 
-// 读取文件，返回字符串
-func ReadFile(Path string) (result string, err error) {
-	// 只读方式打开文件
-	f, err1 := os.Open(Path)
-	if err1 != nil {
-		fmt.Println("os.Open err", err1)
-		err = err1
-		return
+// loadExclusions reads exact rules and domain selectors (domain:example.com).
+func loadExclusions(path string) ([]string, []string, error) {
+	file, err := os.Open(path)
+	if err != nil {
+		return nil, nil, err
 	}
-	defer f.Close()
+	defer file.Close()
 
-	// 读取内容保存到这个切片
-	var content []byte
-	buf := make([]byte, 4096)
-	for {
-		n, err2 := f.Read(buf)
-		if err2 != nil && err2 != io.EOF {
-			fmt.Println("f.Read err:", err2)
-			err = err2
-			return
+	var exact, domains []string
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := strings.TrimSpace(strings.TrimSuffix(scanner.Text(), "\r"))
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
 		}
-		if err2 == io.EOF {
-			break
+		if strings.HasPrefix(line, "domain:") {
+			domains = append(domains, strings.ToLower(strings.TrimPrefix(line, "domain:")))
+		} else {
+			exact = append(exact, normalizeRule(line))
 		}
-		// 合并切片
-		content = append(content, buf[:n]...)
 	}
-	// 字符切片转字符串
-	result = string(content)
-	return
+	return exact, domains, scanner.Err()
 }
 
-// 创建文件并写入数据
-func CreateFile(path, data string) (err error) {
-	f, err := os.Create(path)
-	if err != nil {
-		fmt.Println("os.Create err:", err)
-		return
+func ruleHost(rule string) string {
+	separator := strings.Index(rule, "://")
+	if separator < 0 {
+		return ""
 	}
-	defer f.Close()
-
-	// 第一个参数返回数据长度，第二个，错误信息
-	_, err = f.WriteString(data)
-	if err != nil {
-		fmt.Println("f.WriteString err:", err)
-		return
+	host := rule[separator+3:]
+	if slash := strings.IndexAny(host, "/?#"); slash >= 0 {
+		host = host[:slash]
 	}
-	return
+	return strings.TrimPrefix(strings.ToLower(host), "*.")
 }
 
-// 备份文件，避免丢失
-func BackupFile(dst, src string) (err error) {
-	// 源文件
-	fSrc, err := os.Open(src)
+func isExcluded(rule string, exact, domains []string) bool {
+	canonical := normalizeRule(rule)
+	for _, excluded := range exact {
+		if canonical == excluded {
+			return true
+		}
+	}
+	host := ruleHost(canonical)
+	for _, domain := range domains {
+		if canonical == domain || host == domain || strings.HasSuffix(host, "."+domain) {
+			return true
+		}
+	}
+	return false
+}
+
+func filterExclusions(rules []string, exact, domains []string) []string {
+	filtered := make([]string, 0, len(rules))
+	for _, rule := range rules {
+		if !isExcluded(rule, exact, domains) {
+			filtered = append(filtered, rule)
+		}
+	}
+	return filtered
+}
+
+func processFile(inputPath, outputPath, backupPath, exclusionsPath string) error {
+	content, err := ioutil.ReadFile(inputPath)
 	if err != nil {
-		fmt.Println("os.Open err:", err)
-		return
+		return err
 	}
-	defer fSrc.Close()
-
-	// 目标文件
-	fDst, err := os.Create(dst)
+	exact, domains, err := loadExclusions(exclusionsPath)
 	if err != nil {
-		fmt.Println("os.Create err:", err)
-		return
+		return err
 	}
-	defer fDst.Close()
-
-	buf := make([]byte, 4096)
-	for {
-		n, err := fSrc.Read(buf)
-		if err != nil && err != io.EOF {
-			fmt.Println("f.Read err", err)
-			return  err
-		}
-		if err == io.EOF {
-			break
-		}
-
-		// 读多少写多少
-		if _, err = fDst.Write(buf[:n]); err != nil {
-			return err
-		}
+	rules := filterExclusions(normalizeAndDedupe(string(content)), exact, domains)
+	output := strings.Join(rules, "\n")
+	if len(rules) > 0 {
+		output += "\n"
 	}
-	return
+	if err := ioutil.WriteFile(backupPath, content, 0644); err != nil {
+		return err
+	}
+	return ioutil.WriteFile(outputPath, []byte(output), 0644)
 }
 
 func main() {
-	// 要更新去重的列表
-	path := `uBlacklist.txt`
-
-	// 备份路径
-	Backup := `uBlacklist_backup.txt`
-
-	// 执行前先备份一份
-	if err := BackupFile(Backup, path); err != nil {
-		fmt.Println("BackupFile err", err)
-		return
+	input := flag.String("input", "uBlacklist.txt", "input list")
+	output := flag.String("output", "uBlacklist.txt", "compiled output")
+	backup := flag.String("backup", "uBlacklist_backup.txt", "input backup")
+	exclusions := flag.String("exclusions", "../exclusions.txt", "exclusion rules")
+	flag.Parse()
+	if err := processFile(*input, *output, *backup, *exclusions); err != nil {
+		fmt.Fprintln(os.Stderr, err)
+		os.Exit(1)
 	}
-
-	str, err := ReadFile(path)
-	if err != nil {
-		fmt.Println("ReadFile err:", err)
-		return
-	}
-
-	// 统一换行符
-	str = strings.Replace(str, "\r\n", "\n", -1)
-
-	// 将字符串转成字符串切片
-	strSlice := strings.Split(str, "\n")
-
-	// 去重
-	strSlice = RemoveRepeatedElement(strSlice)
-
-	// 排序
-	sort.Strings(strSlice)
-
-	// 字符串切片转字符串
-	str = strings.Join(strSlice, "\n")
-
-	err = CreateFile(path, str)
-	if err != nil {
-		fmt.Println("CreateFile err:", err)
-		return
-	}
-
-	fmt.Println("更新去重成功！")
 }

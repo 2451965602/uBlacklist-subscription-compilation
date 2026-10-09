@@ -1,42 +1,6 @@
-[submodule "source/YeSilin/uBlacklist"]
-	path = source/YeSilin/uBlacklist
-	url = https://github.com/YeSilin/uBlacklist.git
-[submodule "source/cobaltdisco/Google-Chinese-Results-Blocklist"]
-	path = source/cobaltdisco/Google-Chinese-Results-Blocklist
-	url = https://github.com/cobaltdisco/Google-Chinese-Results-Blocklist.git
-[submodule "source/gyli/Blocklist"]
-	path = source/gyli/Blocklist
-	url = https://github.com/gyli/Blocklist.git
-[submodule "source/h-matsuo/uBlacklist-subscription-for-developer"]
-	path = source/h-matsuo/uBlacklist-subscription-for-developer
-	url = https://github.com/h-matsuo/uBlacklist-subscription-for-developer.git
-[submodule "source/littleserendipity/uBlacklist-Subscription"]
-	path = source/littleserendipity/uBlacklist-Subscription
-	url = https://github.com/littleserendipity/uBlacklist-Subscription.git
-[submodule "source/liubiantao/uBlacklist-Websites"]
-	path = source/liubiantao/uBlacklist-Websites
-	url = https://github.com/liubiantao/uBlacklist-Websites.git
-[submodule "source/nonPointer/uBlacklist-Subscription"]
-	path = source/nonPointer/uBlacklist-Subscription
-	url = https://github.com/nonPointer/uBlacklist-Subscription.git
-[submodule "source/xNathan/uBlacklist-subscription"]
-	path = source/xNathan/uBlacklist-subscription
-	url = https://github.com/xNathan/uBlacklist-subscription.git
-[submodule "source/arosh/ublacklist-stackoverflow-translation"]
-	path = source/arosh/ublacklist-stackoverflow-translation
-	url = https://github.com/arosh/ublacklist-stackoverflow-translation.git
-[submodule "source/dallaslu/penzai-list"]
-	path = source/dallaslu/penzai-list
-	url = https://github.com/dallaslu/penzai-list.git
 [submodule "source/eallion/uBlacklist-Subscription"]
 	path = source/eallion/uBlacklist-Subscription
 	url = https://github.com/eallion/uBlacklist-Subscription.git
-[submodule "source/zweie/some-rules-for-ublacklist"]
-	path = source/zweie/some-rules-for-ublacklist
-	url = https://github.com/zweie/some-rules-for-ublacklist
-[submodule "source/Paxxs/Google-Blocklist"]
-	path = source/Paxxs/Google-Blocklist
-	url = https://github.com/Paxxs/Google-Blocklist
-[submodule "source/laylavish/uBlockOrigin-HUGE-AI-Blocklist"]
-	path = source/laylavish/uBlockOrigin-HUGE-AI-Blocklist
-	url = https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist
+[submodule "source/obgnail/chinese-internet-is-dead"]
+	path = source/obgnail/chinese-internet-is-dead
+	url = https://github.com/obgnail/chinese-internet-is-dead.git
